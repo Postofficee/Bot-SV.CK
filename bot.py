@@ -32,6 +32,12 @@ async def t(ctx, *, text):
 async def hello(ctx):
     await ctx.send("Hello!🖐🏼 {user.mention}. I'm Mr. Lollipop, Do you need any help?. 🍬")
 
+    channel = ctx.channel
+    await ctx.message.delete()  # ลบข้อความคำสั่งของคุณ
+
+    # ส่งข้อความไปยังช่องที่บอทได้ฟัง
+    await channel.send(text)
+
 server_on()
 
 bot.run(os.getenv('TOKEN'))
