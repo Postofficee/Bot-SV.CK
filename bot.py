@@ -30,7 +30,7 @@ async def t(ctx, *, text):
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send("Hello!🖐🏼 '{user.mention}'. I'm Mr. Lollipop, Do you need any help?. 🍬")
+    await ctx.send("Hello!🖐🏼. I'm Mr. Lollipop, Do you need any help?. 🍬")
 
     channel = ctx.channel
     await ctx.message.delete()  # ลบข้อความคำสั่งของคุณ
