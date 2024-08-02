@@ -60,8 +60,6 @@ async def create_card(ctx):
 
     await ctx.send(card_content)
 
-if __name__ == "__main__":
-
 server_on()
 
 bot.run(os.getenv('TOKEN'))
