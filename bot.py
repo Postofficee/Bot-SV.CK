@@ -28,6 +28,10 @@ async def t(ctx, *, text):
     # ส่งข้อความไปยังช่องที่บอทได้ฟัง
     await channel.send(text)
 
+@bot.command()
+async def hello(ctx):
+    await ctx.send("Hello!🖐🏼 {user.mention}. I'm Mr. Lollipop, Do you need any help?. 🍬")
+
 server_on()
 
 bot.run(os.getenv('TOKEN'))
