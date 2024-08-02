@@ -9,7 +9,7 @@ OWNER_ID = 449594221457047562  # เปลี่ยนเป็น ID ของ�
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='!', intents=intents)
+bot = commands.Bot(command_prefix='=', intents=intents)
 
 
 @bot.event
