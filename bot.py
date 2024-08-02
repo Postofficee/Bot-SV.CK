@@ -18,7 +18,7 @@ async def on_ready():
 
 
 @bot.command()
-async def s(ctx, *, text):
+async def t(ctx, *, text):
     if ctx.author.id != OWNER_ID:
         return  # เฉพาะคุณเท่านั้นที่สามารถใช้คำสั่งนี้
 
